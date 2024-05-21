@@ -13,13 +13,14 @@ require('mason-lspconfig').setup({
 	-- Replace the language servers listed here
 	-- with the ones you want to install
 	ensure_installed = {
-		'ccls',
+        'luau_lsp',
 		'clangd',
 		'quick_lint_js',
 		'jsonls',
-		'sourcery',
 		'pyright',
-		'lua_ls'},
+		'lua_ls',
+        'tsserver'
+    },
 		handlers = {
 			function(server_name)
 				require('lspconfig')[server_name].setup({})
@@ -64,3 +65,6 @@ cmp.setup({
     end,
   },
 })
+
+
+
