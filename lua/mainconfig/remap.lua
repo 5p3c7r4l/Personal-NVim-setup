@@ -25,7 +25,7 @@ map("v","k","j")
 map("v","l","k")
 map("v",";","l")
 
-map('n', "<leader>n", ':tabnew<CR>')
+map('n', "<leader>n", ':tabnew $PWD<CR>')
 map('n', "<leader>d", ':tabclose<CR>')
 
 map('n', "<leader>j", ':+tabnext<CR>')
