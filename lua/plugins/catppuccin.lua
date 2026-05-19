@@ -11,7 +11,6 @@ return {
     name = "catppuccin",
     priority = 1000,
     opts = {
-      transparent_background = true,
       lsp_styles = {
         underlines = {
           errors = { "undercurl" },
@@ -19,6 +18,7 @@ return {
           warnings = { "undercurl" },
           information = { "undercurl" },
         },
+        transparent_background = true,
       },
       integrations = {
         aerial = true,
